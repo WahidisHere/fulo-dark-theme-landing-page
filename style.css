@@ -1,0 +1,815 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Comment Out data {
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Raleway', sans-serif;
+} */
+
+/* Common Styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Open Sans', sans-serif;
+  outline: none;
+}
+
+html {
+  font-size: 14px;
+}
+
+body {
+  background-color: hsl(219, 30%, 18%);
+  color: #fff;
+  overflow-x: hidden;
+}
+
+.container {
+  margin: auto;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.btn {
+  border: 0;
+  background-color: hsl(176, 68%, 64%);
+  font-size: 18px;
+  padding: 10px 40px;
+  border-radius: 50px;
+  color: #fff;
+}
+
+button:hover {
+  cursor: pointer;
+}
+/* End of Common Styles */
+
+/* Navbar */
+.navbar {
+  margin: 2em 8em;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Raleway', sans-serif;
+}
+
+.navbar-collapse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item {
+  margin: 0 15px;
+}
+
+.navlink {
+  color: hsl(0, 0%, 100%);
+  opacity: 0.7;
+}
+
+.navlink:hover {
+  opacity: 1;
+  border-bottom: 1px solid #fff;
+  transition: border 2s;
+}
+/* End of Navbar */
+
+/* Header */
+.header {
+  background-color: hsl(219, 30%, 18%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url('images/bg-curvy-desktop.svg') bottom no-repeat;
+  background-size: 100% 270px;
+}
+
+.header-img {
+  width: 500px;
+  height: 500px;
+  object-fit: contain;
+  margin-top: 20px;
+}
+
+.header-content-container {
+  margin: 5rem 0;
+  text-align: center;
+}
+
+.tagline {
+  text-align: center;
+  font-weight: 700;
+  font-family: 'Raleway', sans-serif;
+  font-size: 36px;
+  margin: auto;
+  width: 70%;
+  margin-bottom: 2.5rem;
+}
+
+.fylo-description {
+  width: 50%;
+  margin: auto;
+  font-size: 18px;
+  text-align: center;
+}
+
+.header-btn {
+  margin-top: 30px;
+}
+
+/* End of Header */
+
+/* Service */
+.services-container {
+  background-color: hsl(218, 28%, 13%);
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.service {
+  width: 50%;
+  display: flex;
+  font-family: 'Raleway', sans-serif;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 6.5rem;
+}
+
+.service-img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.service-heading {
+  font-size: 18px;
+}
+
+.service-description {
+  width: 40%;
+  margin: auto;
+  text-align: center;
+  margin: 10px 0;
+}
+/* End of Service */
+
+/* Productivity */
+.productivity {
+  background-color: hsl(218, 28%, 13%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10rem;
+}
+
+.productivity-img-sec {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.producitivity-content {
+  width: 50%;
+  padding: 4rem;
+}
+
+.productivity-heading {
+  font-size: 36px;
+  font-family: 'Raleway', sans-serif;
+  margin: 2rem 0;
+}
+
+.line {
+  margin: 2rem;
+}
+
+.productivity-description {
+  margin: 1.5rem 0;
+}
+
+.productivity-link {
+  color: #fff;
+}
+
+.productivity-link:hover {
+  cursor: pointer;
+  border-bottom: 1px solid #fff;
+}
+
+.productivity-link i {
+  margin-left: 10px;
+  font-size: 18px;
+  border-radius: 50%;
+}
+
+/* End of Productivity */
+
+/* testimonials */
+.testimonials {
+  background-color: hsl(218, 28%, 13%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15rem 0;
+}
+
+.testimonial {
+  background-color: hsl(219, 30%, 18%);
+  width: 400px;
+  padding: 2rem;
+  border-radius: 1rem;
+  margin: 0 5rem;
+  box-shadow: 0.5px 0.5px 0.5px #000;
+  position: relative;
+}
+
+.testimonials:first-child::before {
+  content: url('images/bg-quotes.png');
+  position: absolute;
+  top: -35px;
+  left: -15px;
+  z-index: -1;
+}
+.testimonial-comment {
+  width: 100%;
+}
+
+.testimonial-data {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: 3rem;
+}
+
+.testimonial-img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.testimonial-info {
+  margin-left: 1.2rem;
+  font-size: 12px;
+}
+
+.testimonial-name {
+  font-family: 'Raleway', sans-serif;
+}
+/* end of  testimonials */
+
+/* subscribe */
+.subscribe {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    180deg,
+    hsl(217, 28%, 13%) 60%,
+    hsl(216, 53%, 9%) 40%
+  );
+}
+
+.subscribe-content {
+  width: 800px;
+  background-color: hsl(217, 28%, 15%);
+  padding: 3rem;
+  border-radius: 1.2rem;
+  box-shadow: 5px 5px 5px #000;
+}
+
+.subscribe-heading {
+  text-align: center;
+  font-family: 'Raleway', sans-serif;
+  font-size: 28px;
+  margin-bottom: 2rem;
+}
+
+.subscribe-content p {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.input-data {
+  position: relative;
+}
+
+.error {
+  position: absolute;
+  color: hsl(0, 100%, 63%);
+  bottom: 0;
+  font-size: 12px;
+  left: 40px;
+  display: none;
+  transform: translateY(20px);
+}
+
+.input-data.show .error {
+  display: block;
+}
+
+.subscribe-content form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.email {
+  width: 500px;
+  font-size: 18px;
+  padding: 15px 15px;
+  border-radius: 50px;
+  border: 0;
+  margin-right: 5px;
+}
+
+.submit-btn {
+  font-size: 18px;
+  padding: 15px 15px;
+}
+
+.submit-btn:hover {
+  cursor: pointer;
+}
+/* End of subscribe */
+
+/* Footer */
+
+.footer-section {
+  width: 100%;
+
+  background-color: hsl(216, 53%, 9%);
+}
+
+.footer-logo {
+  margin-left: 10rem;
+  padding-top: 5rem;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+}
+
+.about-fylo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  margin: 0 10rem;
+}
+
+.about-fylo i {
+  margin: 0 20px;
+  font-size: 18px;
+  align-self: flex-start;
+}
+
+.contact-fylo {
+  width: 350px;
+  margin: 0 10rem;
+}
+
+.number {
+  display: flex;
+  transform: translateY(-20px);
+}
+
+.number {
+  margin: 20px 0;
+}
+
+.number i {
+  margin: 0 20px;
+}
+
+.footer-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 350px;
+  margin: 0 10rem;
+}
+
+.first-sec,
+.second-sec {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.second-sec {
+  margin-left: 20px;
+  transform: translateY(-20px);
+}
+
+.first-sec a,
+.second-sec a {
+  color: #fff;
+  margin: 10px 0;
+}
+/* End of Footer */
+
+/* Responsiveness */
+@media (max-width: 1600px) {
+  .about-fylo {
+    margin: 0 7rem;
+  }
+  .contact-fylo {
+    margin: 0 7rem;
+  }
+  .footer-nav {
+    margin: 0 7rem;
+  }
+}
+
+@media (max-width: 1350px) {
+  .about-fylo {
+    margin: 0 4rem;
+  }
+  .contact-fylo {
+    margin: 0 4rem;
+  }
+  .footer-nav {
+    margin: 0 4rem;
+  }
+  .testimonial {
+    width: 400px;
+    margin: 0 2rem;
+  }
+  .service-description {
+    width: 60%;
+  }
+  .footer-logo {
+    margin-left: 5rem;
+    padding-top: 2rem;
+  }
+}
+
+@media (max-width: 1200px) {
+  .tagline {
+    width: 90%;
+  }
+  .fylo-description {
+    width: 70%;
+    margin: auto;
+    font-size: 16px;
+  }
+  .about-fylo {
+    margin: 0 4rem;
+  }
+  .contact-fylo {
+    margin: 0 4rem;
+  }
+  .footer-nav {
+    margin: 0 4rem;
+  }
+  .testimonials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15rem 0;
+  }
+
+  .testimonial {
+    width: 350px;
+    padding: 2rem;
+    margin: 0 1rem;
+  }
+
+  .testimonial-data {
+    margin-top: 2rem;
+  }
+  .service-description {
+    width: 60%;
+  }
+  .productivity-img-sec {
+    padding: 20px;
+  }
+  .productivity-img-sec img {
+    width: 500px;
+    height: 500px;
+    object-fit: contain;
+  }
+  .producitivity-content {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 1000px) {
+  .navbar {
+    margin: 2rem 4rem;
+  }
+  .service-description {
+    width: 75%;
+  }
+  .productivity {
+    padding-top: 5rem;
+  }
+  .productivity-img-sec img {
+    width: 350px;
+    height: 350px;
+    object-fit: contain;
+  }
+  .productivity-img-sec {
+    padding: 0;
+  }
+  .producitivity-content {
+    padding: 1rem;
+  }
+  .testimonials {
+    padding: 7rem 0;
+    flex-wrap: wrap;
+  }
+  .testimonial {
+    margin-top: 20px;
+  }
+  .about-fylo {
+    margin: 0 1rem;
+  }
+  .about-fylo i {
+    margin: 5px;
+  }
+
+  .contact-fylo {
+    margin: 0 1rem;
+    transform: translateY(20px);
+  }
+  .footer-nav {
+    margin: 0 1rem;
+    transform: translateY(20px);
+  }
+  .footer-logo {
+    margin: 1rem auto 2rem 2rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .testimonial {
+    width: 300px;
+    margin: 1rem;
+  }
+  .subscribe-content {
+    width: 600px;
+  }
+  .email {
+    width: 300px;
+    padding: 10px 15px;
+  }
+  .submit-btn {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+
+  .navbar {
+    margin: 2rem 2rem;
+  }
+  .tagline {
+    width: 100%;
+  }
+  .footer-logo {
+    margin: 0 2rem;
+  }
+  .contact-fylo {
+    transform: translateY(-2px);
+  }
+}
+
+@media (max-width: 700px) {
+  .footer-nav {
+    display: none;
+  }
+  .contact-fylo {
+    transform: translateY(20px);
+  }
+  .header {
+    background: url('images/bg-curvy-mobile.svg') bottom no-repeat;
+    background-size: 100% 270px;
+  }
+}
+
+@media (max-width: 650px) {
+  .productivity {
+    flex-wrap: wrap;
+    padding-top: 3rem;
+  }
+
+  .productivity-img-sec {
+    width: 100%;
+  }
+
+  .producitivity-content {
+    width: 100%;
+    padding: 2rem;
+  }
+
+  .productivity-heading {
+    font-size: 24px;
+    margin: 1rem 0;
+  }
+  .productivity-description {
+    margin: 1rem 0;
+  }
+  .testimonial {
+    width: 75%;
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .service {
+    width: 70%;
+    margin-top: 4rem;
+  }
+
+  .service-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .service-heading {
+    font-size: 24px;
+  }
+
+  .service-description {
+    width: 90%;
+    margin: 10px 0;
+  }
+  .testimonial {
+    width: 85%;
+    padding: 2rem;
+  }
+  .subscribe-content {
+    width: 500px;
+  }
+  .email {
+    width: 250px;
+    padding: 10px 15px;
+  }
+  .submit-btn {
+    font-size: 14px;
+    padding: 10px 15px;
+  }
+  .header-img {
+    width: 450px;
+    height: 450px;
+  }
+}
+
+@media (max-width: 500px) {
+  .header-img {
+    width: 350px;
+    height: 350px;
+  }
+
+  .subscribe-content {
+    width: 90%;
+  }
+  .subscribe-content form {
+    flex-wrap: wrap;
+  }
+  .email {
+    width: 380px;
+    padding: 10px 15px;
+  }
+  .submit-btn {
+    margin-top: 2rem;
+    width: 90%;
+  }
+
+  .navbar-brand img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+  }
+  .navbar {
+    margin: 0 1rem;
+  }
+  .nav-item {
+    margin: 0 10px;
+  }
+
+  .header-btn {
+    width: 250px;
+  }
+  .producitivity-content {
+    padding: 1rem;
+  }
+  .footer-logo {
+    margin: 1rem auto 2rem 2rem;
+  }
+  .footer {
+    flex-wrap: wrap;
+  }
+
+  .about-fylo {
+    margin: 1rem 2rem 2rem 2rem;
+  }
+
+  .about-fylo i {
+    margin: 0 20px;
+  }
+
+  .contact-fylo {
+    margin: 1rem auto 0.5rem 2rem;
+  }
+  .footer-nav {
+    display: block;
+    flex-wrap: wrap;
+    margin: 0.5rem auto 2rem 2rem;
+  }
+
+  .first-sec {
+    margin: 1rem auto 2rem 2rem;
+  }
+  .second-sec {
+    margin: 1rem auto 2rem 2rem;
+  }
+
+  .service {
+    width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  .email {
+    width: 330px;
+  }
+  .subscribe-content p {
+    font-size: 12px;
+    margin: 1rem 0;
+  }
+  .nav-item {
+    margin: 0 7px;
+  }
+}
+
+@media (max-width: 400px) {
+  .subscribe-content {
+    width: 90%;
+  }
+  .subscribe-content form {
+    flex-wrap: wrap;
+  }
+  .email {
+    width: 300px;
+    padding: 10px 15px;
+  }
+  .submit-btn {
+    margin-top: 2rem;
+    width: 90%;
+  }
+  .tagline {
+    font-size: 24px;
+    width: 90%;
+  }
+
+  .fylo-description {
+    font-size: 14px;
+  }
+
+  .service {
+    width: 100%;
+  }
+
+  .productivity-img-sec img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .subscribe-heading {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 350px) {
+  .email {
+    width: 250px;
+  }
+  .header-img {
+    width: 280px;
+    height: 280px;
+  }
+
+  .service-heading-1 {
+    font-size: 16px;
+  }
+}
+/* End of Responsiveness */
